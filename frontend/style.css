@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stock {
+    background: white;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.up { color: green; }
+.down { color: red; }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photon Week 1</title>
+    </head>
+<body>
+
+    <h2>Week 1 – WebSocket Test</h2>
+    <button onclick="send()">Send Message</button>
+
+<script>
+    const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+
+    ws.onmessage = (event) => {
+        console.log(event.data);
+        alert(event.data);
+    };
+
+    function send() {
+        ws.send("WebSocket Test Connected");
+    }
+</script>
+
+</body>
+</html>
